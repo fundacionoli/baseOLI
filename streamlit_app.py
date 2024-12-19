@@ -159,8 +159,8 @@ def main():
     # Aplicar los estilos en la app
     st.markdown(sidebar_style, unsafe_allow_html=True)
     
-    st.markdown("<h1 style='color: #001d57';'>Buscador de ONGs Relevantes</h1>", unsafe_allow_html=True)
-    st.markdown("<p style='color: #001d57';'>Encuentra las organizaciones más relevantes según tus necesidades.</p>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color: #001d57';'>Buscador de OLI Aliados e Iniciativas</h1>", unsafe_allow_html=True)
+    st.markdown("<p style='color: #001d57';'>Encuentra las organizaciones más relevantes para tus necesidades.</p>", unsafe_allow_html=True)
 
     
     with st.sidebar:
@@ -201,7 +201,7 @@ def main():
     ong_names = df_filtrado['Nombre de la Iniciativa/Organización'].tolist()
     embeddings = model.encode(combined_texts, convert_to_tensor=True)
 
-    st.markdown("<h3 style='color: #001d57;'>🔍 Buscar ONGs</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #001d57;'>🔍 Buscar Aliados e Iniciativas</h3>", unsafe_allow_html=True)
     description = st.text_area("Describe lo que buscas:", placeholder="ONG que trabaje con niños con cancer.")
 
     top_n = st.number_input(
