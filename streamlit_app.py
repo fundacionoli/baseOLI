@@ -6,7 +6,7 @@ import re
 import io
 
 # Configuración de la página
-st.set_page_config(page_title="Buscador de ONGs", page_icon="🌍", layout="wide")
+st.set_page_config(page_title="Buscador de Aliados e Iniciativas", page_icon="🌍", layout="wide")
 
 # Función para cargar datos desde Google Sheets
 @st.cache_data
@@ -205,7 +205,7 @@ def main():
     description = st.text_area("Describe lo que buscas:", placeholder="ONG que trabaje con niños con cancer.")
 
     top_n = st.number_input(
-        "Selecciona cuántas ONGs relevantes deseas (Top N):", 
+        "Selecciona cuántos aliados deseas (Top N):", 
         min_value=1, max_value=50, value=5, step=1
     )
 
