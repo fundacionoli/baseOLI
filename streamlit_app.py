@@ -11,7 +11,7 @@ st.set_page_config(page_title="Buscador de Aliados e Iniciativas", page_icon="ðŸ
 # FunciÃ³n para cargar datos desde Google Sheets
 @st.cache_data
 def load_data():
-    sheet_id = "15wUU5S5r9gmGX0v6jTtPFgySDDCs0s-Xb7RDSQ985LE"
+    sheet_id = "123_uZ-5G5sNaq9lFNFhVYOcGE7jRww_bUnjs72dDEdM"
     sheet_name = "Respuestas de formulario 1"
     url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=xlsx"
     df = pd.read_excel(url, sheet_name=sheet_name, engine='openpyxl')
