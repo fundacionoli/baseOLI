@@ -17,7 +17,7 @@ def load_data():
     df = pd.read_excel(url, sheet_name=sheet_name, engine='openpyxl')
 
     # Filtro por iniciativas activas
-    df = df[df['¿Su iniciativa se encuentra activa?'].str.lower() != 'no']
+    df = df[df['En caso de ser una iniciativa, ¿su iniciativa se encuentra activa?'].str.lower() != 'no']
 
     # Cambiar nombres
     df['Objetivo_General'] = df['En 50 palabras o menos, por favor, describe el objetivo general de la iniciativa/programa']
